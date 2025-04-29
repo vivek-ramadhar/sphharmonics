@@ -7,8 +7,8 @@ int main() {
     SHSample samples[sqrt_n_samples * sqrt_n_samples];
 
     SH_setup_spherical_samples(samples, sqrt_n_samples, n_bands);
-    
-    for (int i=0; i < sqrt_n_samples*sqrt_n_samples; i++) {
+
+    for(int i=0; i < sqrt_n_samples*sqrt_n_samples; i++) {
         std::cout << samples[i].vec
                   << std::endl;
     };
